@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  color: white;
+  background: black;
+}
+.container {
+  padding: 20px;
+  text-align: center;
+}
+.subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+.track {
+  padding: 60px 20px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 40px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+.track h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+button {
+  background: rgba(255,255,255,0.1);
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
