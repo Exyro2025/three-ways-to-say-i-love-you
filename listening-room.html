@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Three Ways to Say “I Love You” – Listening Room II</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="manifest" href="manifest.json"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Listening Room: Series II</h1>
+    <p class="subtitle">Three Ways to Say “I Love You”</p>
+
+    <!-- TRACK 1 -->
+    <section class="track" style="background-image: url('background1.jpg');">
+      <h2>Whispered Promise</h2>
+      <audio id="vo1" src="whispered-promise-vo.mp3"></audio>
+      <audio id="music1" src="whispered-promise.mp3"></audio>
+      <button onclick="playSequence('vo1', 'music1')">▶ Play Full Experience</button>
+    </section>
+
+    <!-- TRACK 2 -->
+    <section class="track" style="background-image: url('background2.jpg');">
+      <h2>Unspoken Storm</h2>
+      <audio id="vo2" src="unspoken-storm-vo.mp3"></audio>
+      <audio id="music2" src="unspoken-storm.mp3"></audio>
+      <button onclick="playSequence('vo2', 'music2')">▶ Play Full Experience</button>
+    </section>
+
+    <!-- TRACK 3 -->
+    <section class="track" style="background-image: url('background3.jpg');">
+      <h2>Always, Somehow</h2>
+      <audio id="vo3" src="always-somehow-vo.mp3"></audio>
+      <audio id="music3" src="always-somehow.mp3"></audio>
+      <button onclick="playSequence('vo3', 'music3')">▶ Play Full Experience</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
