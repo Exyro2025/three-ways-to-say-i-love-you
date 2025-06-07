@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Three Ways to Say “I Love You” – Listening Room II</title>
+  <title>Listening Room: Series II – Tarvona</title>
   <link rel="stylesheet" href="style.css"/>
   <link rel="manifest" href="manifest.json"/>
 </head>
@@ -15,28 +15,42 @@
     <!-- TRACK 1 -->
     <section class="track" style="background-image: url('background1.jpg');">
       <h2>Whispered Promise</h2>
-      <audio id="vo1" src="whispered-promise-vo.mp3"></audio>
-      <audio id="music1" src="whispered-promise.mp3"></audio>
-      <button onclick="playSequence('vo1', 'music1')">▶ Play Full Experience</button>
+      <audio id="intro1" src="whispered-promise-vo.mp3"></audio>
+      <audio id="track1" src="whispered-promise.mp3"></audio>
+      <button onclick="playSequence('intro1', 'track1')">▶ Prelude + Song</button>
     </section>
 
     <!-- TRACK 2 -->
     <section class="track" style="background-image: url('background2.jpg');">
       <h2>Unspoken Storm</h2>
-      <audio id="vo2" src="unspoken-storm-vo.mp3"></audio>
-      <audio id="music2" src="unspoken-storm.mp3"></audio>
-      <button onclick="playSequence('vo2', 'music2')">▶ Play Full Experience</button>
+      <audio id="intro2" src="unspoken-storm-vo.mp3"></audio>
+      <audio id="track2" src="unspoken-storm.mp3"></audio>
+      <button onclick="playSequence('intro2', 'track2')">▶ Prelude + Song</button>
     </section>
 
     <!-- TRACK 3 -->
     <section class="track" style="background-image: url('background3.jpg');">
       <h2>Always, Somehow</h2>
-      <audio id="vo3" src="always-somehow-vo.mp3"></audio>
-      <audio id="music3" src="always-somehow.mp3"></audio>
-      <button onclick="playSequence('vo3', 'music3')">▶ Play Full Experience</button>
+      <audio id="intro3" src="always-somehow-vo.mp3"></audio>
+      <audio id="track3" src="always-somehow.mp3"></audio>
+      <button onclick="playSequence('intro3', 'track3')">▶ Prelude + Song</button>
     </section>
+
+    <footer class="footer">
+      <p>Produced under <strong>Jerailian House™</strong> | All rights reserved © 2025</p>
+    </footer>
   </div>
 
-  <script src="script.js"></script>
+  <script>
+    function playSequence(introId, trackId) {
+      const intro = document.getElementById(introId);
+      const track = document.getElementById(trackId);
+      intro.pause(); track.pause();
+      intro.currentTime = 0; track.currentTime = 0;
+      intro.play();
+      intro.onended = () => track.play();
+    }
+  </script>
 </body>
 </html>
+
