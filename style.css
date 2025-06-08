@@ -84,5 +84,14 @@ button:hover {
   visibility: visible;
   opacity: 1;
 }
+button + button {
+  margin-left: 10px;
+  background: #300;
+  border-color: #fff;
+}
+button + button:hover {
+  background: #500;
+}
+
 
 
