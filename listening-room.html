@@ -53,18 +53,24 @@
   </p>
 </footer>
 
-
-
   <script>
-    function playSequence(introId, trackId) {
-      const intro = document.getElementById(introId);
-      const track = document.getElementById(trackId);
-      intro.pause(); track.pause();
-      intro.currentTime = 0; track.currentTime = 0;
-      intro.play();
-      intro.onended = () => track.play();
-    }
-  </script>
+  function playSequence(introId, trackId) {
+    const intro = document.getElementById(introId);
+    const track = document.getElementById(trackId);
+    intro.pause(); track.pause();
+    intro.currentTime = 0; track.currentTime = 0;
+    intro.play();
+    intro.onended = () => track.play();
+  }
+
+  function stopPlayback(introId, trackId) {
+    const intro = document.getElementById(introId);
+    const track = document.getElementById(trackId);
+    intro.pause(); track.pause();
+    intro.currentTime = 0; track.currentTime = 0;
+  }
+</script>
+
 </body>
 </html>
 
